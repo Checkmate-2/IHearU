@@ -56,7 +56,7 @@ def main():
     if len(modelname) > 0 :
 
         # Save lables as CSV
-        np.savetxt(modelname+ ".csv", [actions], delimiter="," , fmt='%s')
+        np.savetxt(modelname+ ".txt", [actions], delimiter="," , fmt='%s')
         # Saving the model
         model.save(modelname)
 

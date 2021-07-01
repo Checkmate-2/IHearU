@@ -49,7 +49,7 @@ def main():
 
     modelname = input("model name : " ) # name of the model
     # Load actions array from CSV file
-    actions = np.genfromtxt(modelname+'.csv',dtype=None, delimiter=',',encoding='UTF-8') 
+    actions = np.genfromtxt(modelname+'.txt',dtype=None, delimiter=',',encoding='UTF-8') 
     model = load_model(modelname) #loading model
     no_frames = int(input("number of frames per sequence for prediction: " ))
     # Cam source that you use (normally 0)
@@ -91,7 +91,7 @@ def main():
                 
                 sequence = [] #empty sequence to collect new frames
                 
-                
+
                 #3 Viz logic
                 
                 if len(predictions)>= int(stability_coff) and np.unique(predictions[-stability_coff:])[0]==np.argmax(res): 
