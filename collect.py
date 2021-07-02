@@ -66,7 +66,7 @@ def main():
     with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
         
         # Loop through actions
-        cv2.waitKey(10000) #at the start wait 10 seconds
+        cv2.waitKey(2000) #at the start wait 2 seconds
         window = [] # the list that will contain all the landmarks
         # Loop through sequences aka videos
         for sequence in range(no_sequences):   
@@ -85,7 +85,7 @@ def main():
                 
                 # Apply wait logic
                 if sequence == 0: 
-                    cv2.putText(image, 'STARTING COLLECTION IN 10s', (120,200), 
+                    cv2.putText(image, 'STARTING COLLECTION', (120,200), 
                                 cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255, 0), 4, cv2.LINE_AA)
                     cv2.putText(image, 'Video Sequence Number {}'.format(sequence), (15,12), 
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
@@ -111,7 +111,7 @@ def main():
         #saving the keypoints in the action folder
         dirmax = 0
         if len(np.array(os.listdir(os.path.join(DATA_PATH, action)))) > 0:
-            dirmax = np.max(np.array(os.listdir(os.path.join(DATA_PATH, action))).astype(int))
+            dirmax = len(np.array(os.listdir(os.path.join(DATA_PATH, action))))
         npy_path = os.path.join(DATA_PATH, action, str(dirmax+1))
         np.save(npy_path, window)
                         
