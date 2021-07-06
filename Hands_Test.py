@@ -72,7 +72,7 @@ def main():
 
     cap = cv2.VideoCapture(no_cam)
     # Set mediapipe model 
-    with mp_hands.Hands(max_num_hands=2,min_detection_confidence=0.5,min_tracking_confidence=0.5) as hands :
+    with mp_hands.Hands(max_num_hands=2,min_detection_confidence=0.7,min_tracking_confidence=0.5) as hands :
         while cap.isOpened():
 
             # Read feed
