@@ -44,6 +44,7 @@ def main():
     model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
 
     model.fit(X_train, y_train, epochs=no_epochs)
+    model.summary()
 
     # Evaluation Metrics
     yhat = model.predict(X_test)
