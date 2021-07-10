@@ -1,8 +1,8 @@
 # Graduation Project | CS-12
 I Hear U, precedes a way for sign language recognition using computer vision technology to translate signs into Arabic language.\
 **Demo Video:** https://youtu.be/KH9pcdHTJOA
-#
-### How to setup:
+
+## How to setup:
 * clone the repo 
 `git clone https://github.com/Checkmate-2/IHearU.git`
 * move to the the folder 
@@ -14,7 +14,7 @@ I Hear U, precedes a way for sign language recognition using computer vision tec
 * install the requierments 
 `pip install -r requirements.txt`
 
-### How to run:
+## How to run:
 * open the terminal in the code folder
 * activate the virtual environment 
 `venv\Scripts\activate.ps1` if usuing powersell
