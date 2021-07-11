@@ -1,6 +1,6 @@
 # Graduation Project | CS-12
 I Hear U, precedes a way for sign language recognition using computer vision technology to translate signs into Arabic language.\
-**Demo Video:** https://youtu.be/KH9pcdHTJOA \
+**Demo video:** https://youtu.be/KH9pcdHTJOA \
 **Project documentation:** http://surl.li/zicz
 
 ## How to setup:
