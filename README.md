@@ -27,22 +27,21 @@ or
 
 # Important
 * all data and model folders should be in the same folder as the code
-### 1- Collect parameters
+## 1- Collect parameters
 * data folder : where u wanna save the action
 * action name : name of the action (a ,b , hello)
 * number of sequences : number of data samples u want to collect
 * number of frames per sequence : every sample has ( 2 frames ,10 frames ,30 frames) of data
 * you cam source number : you camera number usualy (0) or (1) or (2)
-
 * recording starts after 10 seconds, after the recording is done u action will be saved in the data folder
 
-### 2- Train parameters
+## 2- Train parameters
 * data folder name : the folder that has ur actions data
 * number of epochs : how many epochs u wanna train the model
 * model name : name of the model if u want to save it . 
 * u get a tflite model, a complete model, a csv file for the actions
 
-### 3- Test parameters
+## 3- Test parameters
 * modelname = the model folder name 
 * number of frames the model recieve : how many frames ur trained model recieve
 * accuracy threshold : take a value from 0 : 1
